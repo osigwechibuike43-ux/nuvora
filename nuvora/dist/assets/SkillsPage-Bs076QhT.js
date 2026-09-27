@@ -1,0 +1,16 @@
+import{g as c,k as n,r as l,j as e,P as d,L as x,C as h,h as m,S as p}from"./index-BXa9Uyp-.js";import{a as u}from"./States-BLVwm2Q_.js";import{g}from"./catalogService-waIJBPhu.js";/**
+ * @license lucide-react v0.441.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const k=c("Cpu",[["rect",{width:"16",height:"16",x:"4",y:"4",rx:"2",key:"14l7u7"}],["rect",{width:"6",height:"6",x:"9",y:"9",rx:"1",key:"5aljv4"}],["path",{d:"M15 2v2",key:"13l42r"}],["path",{d:"M15 20v2",key:"15mkzm"}],["path",{d:"M2 15h2",key:"1gxd5l"}],["path",{d:"M2 9h2",key:"1bbxkp"}],["path",{d:"M20 15h2",key:"19e6y8"}],["path",{d:"M20 9h2",key:"19tzq7"}],["path",{d:"M9 2v2",key:"165o2o"}],["path",{d:"M9 20v2",key:"i2bqo8"}]]);/**
+ * @license lucide-react v0.441.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const y=c("Palette",[["circle",{cx:"13.5",cy:"6.5",r:".5",fill:"currentColor",key:"1okk4w"}],["circle",{cx:"17.5",cy:"10.5",r:".5",fill:"currentColor",key:"f64h9f"}],["circle",{cx:"8.5",cy:"7.5",r:".5",fill:"currentColor",key:"fotxhn"}],["circle",{cx:"6.5",cy:"12.5",r:".5",fill:"currentColor",key:"qy21gx"}],["path",{d:"M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z",key:"12rzf8"}]]);/**
+ * @license lucide-react v0.441.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const f=c("Target",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["circle",{cx:"12",cy:"12",r:"6",key:"1vlfrh"}],["circle",{cx:"12",cy:"12",r:"2",key:"1c9p78"}]]),j={cpu:k,briefcase:m,palette:y,target:f};function v({name:s}){const a=s&&j[s]||p;return e.jsx(a,{className:"h-4.5 w-4.5 text-nuvora-green"})}function M(){n("Explore skills","Browse skills across technology, business, creative, and professional categories on NUVORA.");const[s,a]=l.useState(null),[i,o]=l.useState(!1);return l.useEffect(()=>{g().then(a).catch(()=>o(!0))},[]),i?e.jsx(u,{message:"We couldn't load the skill catalog.",onRetry:()=>window.location.reload()}):s?e.jsxs("div",{className:"mx-auto max-w-5xl",children:[e.jsxs("div",{className:"mb-8",children:[e.jsx("h1",{className:"font-display text-2xl font-semibold",children:"Explore skills"}),e.jsx("p",{className:"mt-1 text-sm text-nuvora-muted",children:"Pick a skill to see its learning path."})]}),e.jsx("div",{className:"flex flex-col gap-10",children:s.map(t=>e.jsxs("section",{children:[e.jsxs("div",{className:"mb-4 flex items-center gap-2",children:[e.jsx(v,{name:t.icon}),e.jsx("h2",{className:"font-medium",children:t.name})]}),e.jsx("div",{className:"grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4",children:t.skills.map(r=>e.jsx(x,{to:`/learn/skill/${r.slug}`,children:e.jsxs(h,{className:"h-full p-4 transition-colors hover:border-nuvora-green/50",children:[e.jsx("p",{className:"text-sm font-medium",children:r.name}),r.description&&e.jsx("p",{className:"mt-1 line-clamp-2 text-xs text-nuvora-muted",children:r.description})]})},r.id))})]},t.id))})]}):e.jsx(d,{label:"Loading skills"})}export{M as SkillsPage};

@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /skills
+Allow: /learn/
+Allow: /career
+Allow: /u/
+
+Disallow: /dashboard
+Disallow: /tutor
+Disallow: /notes
+Disallow: /progress
+Disallow: /profile
+Disallow: /admin
+Disallow: /onboarding
+Disallow: /auth/
+Disallow: /reset-password
+
+Sitemap: /sitemap.xml

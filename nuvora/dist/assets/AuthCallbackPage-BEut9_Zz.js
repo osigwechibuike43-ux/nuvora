@@ -1,0 +1,1 @@
+import{u as t,a as n,r as i,j as o,P as r}from"./index-BXa9Uyp-.js";function g(){const{session:a,isLoading:s}=t(),e=n();return i.useEffect(()=>{s||e(a?"/dashboard":"/login",{replace:!0})},[s,a,e]),o.jsx(r,{label:"Signing you in"})}export{g as AuthCallbackPage};
