@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --nuvora-bg: #050706;
+  --nuvora-surface: #0b0f0c;
+  --nuvora-card: #101611;
+  --nuvora-border: #1e2921;
+  --nuvora-text: #f8faf9;
+  --nuvora-muted: #9ca3af;
+}
+
+html.light {
+  color-scheme: light;
+  --nuvora-bg: #ffffff;
+  --nuvora-surface: #f6f8f6;
+  --nuvora-card: #ffffff;
+  --nuvora-border: #e3e8e4;
+  --nuvora-text: #0b1210;
+  --nuvora-muted: #5b6660;
+}
+
+@layer base {
+  * {
+    @apply border-nuvora-border;
+  }
+  body {
+    @apply bg-nuvora-dark text-nuvora-white;
+  }
+  html.light body {
+    @apply bg-nuvora-white text-nuvora-dark;
+  }
+  ::selection {
+    @apply bg-nuvora-green/30 text-nuvora-white;
+  }
+  :focus-visible {
+    outline: 2px solid #16A34A;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .container-nuvora {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+  .glow-border {
+    box-shadow: inset 0 0 0 1px rgba(30, 41, 33, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
